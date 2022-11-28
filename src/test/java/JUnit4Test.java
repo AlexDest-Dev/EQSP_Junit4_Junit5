@@ -10,7 +10,7 @@ public class JUnit4Test
         calculator = new SimpleCalculator();
     }
     @Test
-    public void sumShouldBePositive(){
+    public void sumShouldBeEqualExpectedNumber(){
         int a = 1, b = 2;
         int expected = a + b;
         Assert.assertEquals(expected, calculator.addition(a, b));

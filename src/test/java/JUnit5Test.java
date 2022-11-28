@@ -9,7 +9,7 @@ public class JUnit5Test
         calculator = new SimpleCalculator();
     }
     @Test
-    public void sumShouldBePositive(){
+    public void subtractionShouldBeEqualExpectedNumber(){
         int a = 1, b = 2;
         int expected = a - b;
         Assertions.assertEquals(expected, calculator.subtraction(a, b));
