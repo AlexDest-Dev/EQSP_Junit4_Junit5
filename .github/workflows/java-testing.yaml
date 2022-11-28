@@ -15,5 +15,5 @@ jobs:
           distribution: 'adopt'
       - name: Build with Maven
         run: mvn --batch-mode --update-snapshots package
-      - name: Test with Maven
-        run: mvn test
+      - name: Clean old test data and run new tests
+        run: mvn clean test
